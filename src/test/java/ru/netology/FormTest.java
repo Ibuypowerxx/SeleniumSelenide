@@ -115,8 +115,8 @@ public class FormTest {
     }
     @Test
     void noCheckbox() {
-        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Петров Петя");
-        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79102671142");
+        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Иванов Иван");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+70000000000");
         driver.findElement(By.cssSelector("button")).click();
 
         String expected = "Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй";
